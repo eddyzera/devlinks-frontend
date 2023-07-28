@@ -7,4 +7,5 @@ export interface IInputRootProps extends React.HTMLAttributes<HTMLElement> {
 export interface IInputLabelProps
   extends React.LabelHTMLAttributes<HTMLLabelElement> {
   label: string
+  idHtmlFor: string
 }

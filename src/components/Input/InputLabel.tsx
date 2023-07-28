@@ -1,14 +1,16 @@
 import React from 'react'
+import * as Label from '@radix-ui/react-label'
 import { IInputLabelProps } from './types'
 
 export const InputLabel: React.FunctionComponent<IInputLabelProps> = ({
   label,
   className,
+  idHtmlFor,
   ...props
 }) => {
   return (
-    <label htmlFor="" className={`${className}`} {...props}>
+    <Label.Root htmlFor={idHtmlFor} className={`${className}`} {...props}>
       {label}
-    </label>
+    </Label.Root>
   )
 }
